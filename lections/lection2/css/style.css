@@ -1,3 +1,23 @@
-h2 {
+/* Обращение ко всем тегам h2 */
+/* h2 {
     color: brown;
+} */
+
+/* Обращение через class */
+.heading {
+    color: blueviolet;
+}
+
+/* heading_about если записать через нижнее подчёркивание это будет как бы уникальный заголовок , а так это общее название. */
+.heading-about {
+    color: orange;
+}
+
+/* Позиция маркера для списков */
+/* .li-test {
+    list-style-position: inside;
+} */
+
+.title {
+    background-color: grey;
 }
