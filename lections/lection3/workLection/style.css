@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgb(17, 170, 178);
+}
+
+.header_link {
+  font-style: no;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 113px;
+  color: rgba(10, 10, 120, 0.209);
+  mix-blend-mode: normal;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 113px;
+  color: rgba(10, 10, 120, 0.209);
+  mix-blend-mode: normal;
+}
+
+
+
+.about_txt {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 113px;
+  color: rgba(10, 10, 120, 0.209);
+  mix-blend-mode: normal;
+}
