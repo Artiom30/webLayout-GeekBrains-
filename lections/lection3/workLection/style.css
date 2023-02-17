@@ -22,6 +22,11 @@ a {
 
 }
 
+.top {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
 .title {
   font-style: normal;
   font-weight: 700;
@@ -31,22 +36,36 @@ a {
   mix-blend-mode: normal;
 }
 
+.about {
+  background: rgba(10, 10, 120, 0.209);
+  padding-top: 64px;
+  padding-bottom: 194px;
+}
+
 .heading {
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
-  line-height: 113px;
+  font-size: 48px;
+  line-height: 80px;
   color: rgba(10, 10, 120, 0.209);
   mix-blend-mode: normal;
 }
 
+.about__content {
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7D7987;
+  mix-blend-mode: normal;
+}
 
-
-.about_txt {
+/* .about_txt {
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
   line-height: 113px;
   color: rgba(10, 10, 120, 0.209);
   mix-blend-mode: normal;
-}
+} */
