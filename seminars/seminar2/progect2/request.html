@@ -15,15 +15,19 @@
   <a class="menu-link" href="./info/about.html">Обо мне</a>
   <a class="menu-link" href="request.html">Оставить заявку</a>
   <h1 class="page-title">Оставить заявку</h1>
-  <form action="#">
+  <form action="#" class="request-form">
     <!-- В action, обычно пишут путь , куда данный из формы будут уходить для обработки и хранения. ( php ) -->
     <input class="input-field input-name" type="text" placeholder="Name"><br>
     <input class="input-field input-email" type="email" placeholder="@mail"><br>
-    <input class="btn btn-submit" type="submit" value="Отправить">
-    <input class="btn btn-reset" type="reset" value="Очистить">
+    <input class="input-btn" type="submit" value="Отправить">
+    <input class="input-btn" type="reset" value="Очистить">
+
+    <!-- При записи названий классов, для поля ввода input лучше прописать "input-btn"
+     А если элемент реализован через кнопки , то "btn" -->
+
     <!-- Это альтернатисный способ дообавления кнопки ( через input ) -->
-    <!-- <button type="submit">Отправить</button>
-    <button type="reset">Очистить</button> -->
+    <!-- <button type="submit" class="btn btn-submit">Отправить</button>
+    <button type="reset" class="btn btn-submit" >Очистить</button> -->
   </form>
 
 </body>
