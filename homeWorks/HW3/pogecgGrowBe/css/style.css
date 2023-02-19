@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top-header {
+	margin: 40px auto 84px;
+}
+
+/* .dropdoun-features {} */
+.top-promo {
+	margin: 0 auto 259px;
+}
+
+/* Тут я не уверен , правильно ли я посчитал отступ 259 с макета? */
+.promo-title {
+	padding: 0 0 17px 0;
+}
+
+.promo-wrp {
+	padding: 0 0 37px 0;
+}
+
+.top-logos {
+	margin: 0 auto 96px;
+}
+
+.top-logos-list {
+	text-decoration: none;
+}
