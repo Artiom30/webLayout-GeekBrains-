@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	padding: 39px 0;
+	margin: 0 0 160px 0;
+}
+
+.top-content {
+	margin: 0 0 197px 0;
+}
+
+.top-content-small-title {
+	margin: 0 0 10px 0;
+}
+
+.top-content-title {
+	margin: 0 0 40px 0;
+}
+
+.top-content-txt {
+	margin: 0 0 50px 0;
+}
+
+/* юtop-content-btn {} */
