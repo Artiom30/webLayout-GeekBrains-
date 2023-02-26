@@ -60,9 +60,21 @@ a {
 	color: black;
 }
 
+.header-link-menu-item a:hover {
+	color: #888888;
+}
+
+.header-link-menu-item a:active {
+	color: #F25822;
+}
+
 .header-link-menu-item-home a {
 	color: #F25822;
 	/* 1.Вот тут я не понял, цвет в макете написан чтобы понять что текст меняется при active , или когда пользователь находится на этой странице ?? */
+}
+
+.header-link-menu-item-home a:hover {
+	color: #888888;
 }
 
 .dropdoun-features {
@@ -128,10 +140,29 @@ a {
 	line-height: 18px;
 }
 
+.btn-start:hover {
+	background-color: white;
+	color: #888888;
+	border: 1px solid black;
+}
+
+.btn-start:active {
+	background-color: white;
+	color: #F25822;
+}
+
 .btn-watch-video {
 	font-size: 15px;
 	line-height: 18px;
 	color: #AAAAAA;
+}
+
+.btn-watch-video:hover {
+	color: black;
+}
+
+.btn-watch-video:active {
+	color: #F25822;
 }
 
 /* ===========END.top-promor================= */
