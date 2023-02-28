@@ -1,0 +1,260 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Gilroy-Bold", sans-serif;
+	font-style: normal;
+	background-color: white;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+.center {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	/* outline: 1px solid red */
+}
+
+/* У кнопки пропал изменяемый курсор... */
+.btn {
+	max-width: 200px;
+	min-height: 40px;
+	border: none;
+	background: #F25822;
+	border-radius: 50px;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: "Gilroy-Bold", sans-serif;
+}
+
+/* ===========.top================= */
+
+/* ===========.top-header================= */
+.top-header {
+	margin: 40px auto 84px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-link-menu {
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	gap: 36px;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-link-menu-item a {
+	font-family: "Gilroy-SemiBold", sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	color: black;
+}
+
+.header-link-menu-item a:hover {
+	color: #888888;
+}
+
+.header-link-menu-item a:active {
+	color: #F25822;
+}
+
+.header-link-menu-item-home a {
+	color: #F25822;
+	/* 1.Вот тут я не понял, цвет в макете написан чтобы понять что текст меняется при active , или когда пользователь находится на этой странице ?? */
+}
+
+.header-link-menu-item-home a:hover {
+	color: #888888;
+}
+
+.dropdoun-features {
+	border-style: inherit;
+	/* 2.Как должен выпадать dropdoun, при нащатии на текст или на иконку ? */
+}
+
+/* ===========END.top-header================= */
+/* ===========.top-promor================= */
+
+.top-promo {
+	margin: 0 auto 162px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 40px;
+}
+
+.promo-image {
+	width: 544px;
+	height: 373px;
+}
+
+.promo-image-photo {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.promo-content {
+	max-width: 522px;
+	width: 100%;
+	text-align: start;
+}
+
+.promo-title {
+	padding: 0 0 17px 0;
+	font-size: 60px;
+	line-height: 70px;
+}
+
+.promo-txt {
+	padding: 0 0 37px 0;
+	font-size: 20px;
+	line-height: 23px;
+	color: #888888;
+	margin-right: 56px;
+	font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.promo-btn {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+}
+
+.btn-start {
+	max-width: 140px;
+	width: 100%;
+	border-radius: 50px;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.btn-start:hover {
+	background-color: white;
+	color: #888888;
+	border: 1px solid black;
+}
+
+.btn-start:active {
+	background-color: white;
+	color: #F25822;
+}
+
+.btn-watch-video {
+	font-size: 15px;
+	line-height: 18px;
+	color: #AAAAAA;
+}
+
+.btn-watch-video:hover {
+	color: black;
+}
+
+.btn-watch-video:active {
+	color: #F25822;
+}
+
+/* ===========END.top-promor================= */
+/* ===========.top-logos================= */
+
+/* .top-logos {
+	margin: 0 auto 96px;
+} */
+
+.top-logos-list {
+	padding-top: 97px;
+	padding-bottom: 96px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 48px;
+}
+
+.top-logos-list-item__margin {
+	margin-left: -20px;
+	/* 3.костыль! */
+}
+
+/* ===========END.top-logos================= */
+/* ===========END.top================= */
+
+
+
+
+/* =========Gilroy============= */
+@font-face {
+	font-family: "Gilroy-Regular";
+	src: url('../fonts/gilroy-regular.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('../fonts/gilroy-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/gilroy-regular.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-regular.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/gilroy-regular.svg#gilroy-regular') format('svg');
+	/* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: "Gilroy-Medium";
+	src: url('../fonts/gilroy-medium.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('../fonts/gilroy-medium.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/gilroy-medium.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-medium.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg');
+	/* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: "Gilroy-Bold";
+	src: url('../fonts/gilroy-bold.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('../fonts/gilroy-bold.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/gilroy-bold.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-bold.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg');
+	/* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: "Gilroy-SemiBold";
+	src: url('../fonts/gilroy-semibold.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-semibold.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('../fonts/gilroy-semibold.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/gilroy-semibold.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-semibold.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/gilroy-semibold.svg#gilroy-semibold') format('svg');
+	/* Chrome < 4, Legacy iOS */
+}
+
+/* =========END-Gilroy============= */
