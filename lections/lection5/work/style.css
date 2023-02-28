@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	/* max-width: 1200px; */
+	/* min-height: 100vh; */
+	border: 1px solid black;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	background-color: grey;
+	flex-wrap: wrap;
+}
+
+.item {
+	width: 32vw;
+	height: 50vh;
+	border: 1px solid black;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}
+
+@media (max-width:1024px) {
+
+	/* 1024 - это верхняя граница ширины планшета
+768 - это нижняя граница ширины планшета */
+	/* Стили для планшета */
+	h1 {
+		font-size: 24px;
+	}
+
+	.item {
+		/* background-color: orange; */
+		width: 50vw;
+		/* поделят экран на 2 части */
+		height: 250px;
+	}
+}
+
+@media (max-width:767px) {
+
+	/* Стили для мобильного устройства */
+	/* 767 - это верхняя граница ширины мобильного устройства */
+	/*  - это нижняя граница ширины мобильного устройства */
+	h1 {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.item {
+		width: 100vw;
+		/* растянутся на весь экран */
+		height: 200px;
+	}
+}
+
+@media(min-width:768px) {
+	body {
+		padding: 32px;
+	}
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+	h1 {
+		text-decoration: underline;
+	}
+}
