@@ -35,7 +35,7 @@ a {
 
 /* ===========.top================= */
 
-/* ===========.top-header================= */
+/* ====.top-header===== */
 .top-header {
 	margin: 40px auto 84px;
 	display: flex;
@@ -81,8 +81,8 @@ a {
 	/* 2.Как должен выпадать dropdoun, при нащатии на текст или на иконку ? */
 }
 
-/* ===========END.top-header================= */
-/* ===========.top-promor================= */
+/* =====END.top-header===== */
+/*=====.top-promor===== */
 
 .top-promo {
 	margin: 0 auto 162px;
@@ -164,8 +164,8 @@ a {
 	color: #F25822;
 }
 
-/* ===========END.top-promor================= */
-/* ===========.top-logos================= */
+/* ====END.top-promor==== */
+/* =====.top-logos==== */
 
 /* .top-logos {
 	margin: 0 auto 96px;
@@ -186,13 +186,126 @@ a {
 	/* 3.костыль! */
 }
 
-/* ===========END.top-logos================= */
-/* ===========END.top================= */
+/* ====END.top-logos==== */
+/* =====END.top===== */
+/* ====.services==== */
+.services {}
+
+/* ====.possibilities==== */
+
+.possibilities {}
+
+.possibilities-card {
+	margin: 24px auto 176px;
+	max-width: 310px;
+	min-height: 226px;
+}
+
+.possibilities-card-item {
+	outline: 1px solid black;
+}
+
+.possibilities-card-item_padding {
+	max-width: 370px;
+	min-height: 291px;
+	padding: 36px 31px 29px 30px;
+	box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.possibilities-card-icon {
+	border-radius: 15px;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.possibilities-card-description {}
+
+.possibilities-card-title {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.possibilities-card-txt {
+	font-family: "Gilroy-Regular", sans-serif;
+	font-size: 15px;
+	line-height: 22px;
+	color: #666666;
+	padding-right: 40px;
+}
+
+.read-more {
+	font-size: 11px;
+	line-height: 16px;
+	color: #000000;
+}
+
+/* ====END.possibilities==== */
+/* ====.advantages==== */
+
+.advantages {
+	background: #FAFAFA;
+	outline: 1px solid yellow;
+}
+
+.advantages-wrp {
+	margin: 12px auto 55px;
+}
+
+.advantages-wrp-title {
+	font-size: 45px;
+	line-height: 53px;
+}
+
+.advantages-wrp-txt {
+	font-family: 'Gilroy-Regular';
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #666666;
+}
+
+.advantages-offers {}
+
+.advantages-offers-card {
+	margin: 0 auto 100px;
+}
+
+.advantages-offers-image {
+	width: 400px;
+	height: 300px;
+	/* В макете мне кажется недочёт с размерами картинок... Поэтому размеры я поствил одинаковыми. */
+	outline: 1px solid red;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.advantages-offers-image__img-1 {
+	background-image: url(../img/keyword-research.png);
+}
+
+.advantages-offers-image__img-2 {
+	background-image: url(../img/seo-optimazadion.png);
+}
+
+.advantages-offers-image__img-3 {
+	background-image: url(../img/social-marketing.png);
+}
+
+.advantages-offers-title {}
+
+.advantages-offers-txt {}
+
+.advantages-offers-btn {}
+
+.btn {}
+
+/* ====END.advantages==== */
+
+/* ====END.services==== */
 
 
-
-
-/* =========Gilroy============= */
+/*=====Gilroy===== */
 @font-face {
 	font-family: "Gilroy-Regular";
 	src: url('../fonts/gilroy-regular.eot');
