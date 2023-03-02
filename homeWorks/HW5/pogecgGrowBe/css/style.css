@@ -18,10 +18,8 @@ a {
 	max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
-	/* outline: 1px solid red */
 }
 
-/* У кнопки пропал изменяемый курсор... */
 .btn {
 	max-width: 200px;
 	min-height: 40px;
@@ -69,7 +67,6 @@ a {
 
 .header-link-menu-item-home a {
 	color: #F25822;
-	/* 1.Вот тут я не понял, цвет в макете написан чтобы понять что текст меняется при active , или когда пользователь находится на этой странице ?? */
 }
 
 .header-link-menu-item-home a:hover {
@@ -78,7 +75,6 @@ a {
 
 .dropdoun-features {
 	border-style: inherit;
-	/* 2.Как должен выпадать dropdoun, при нащатии на текст или на иконку ? */
 }
 
 /* =====END.top-header===== */
@@ -199,18 +195,27 @@ a {
 	margin: 24px auto 176px;
 	max-width: 310px;
 	min-height: 226px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 310px 1fr 310px;
+	justify-content: center;
+	gap: 60px;
+	align-items: baseline;
 }
 
 .possibilities-card-item {
-	outline: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
 }
 
-.possibilities-card-item_padding {
-	max-width: 370px;
+.possibilities-card-item__padding {
+	width: 370px;
 	min-height: 291px;
 	padding: 36px 31px 29px 30px;
 	box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
+
 
 .possibilities-card-icon {
 	border-radius: 15px;
@@ -218,7 +223,12 @@ a {
 	line-height: 28px;
 }
 
-.possibilities-card-description {}
+.possibilities-card-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 17px;
+}
 
 .possibilities-card-title {
 	font-size: 24px;
@@ -230,13 +240,21 @@ a {
 	font-size: 15px;
 	line-height: 22px;
 	color: #666666;
-	padding-right: 40px;
+	padding-right: 39px;
 }
 
 .read-more {
 	font-size: 11px;
 	line-height: 16px;
 	color: #000000;
+}
+
+.read-more:hover {
+	color: #888888;
+}
+
+.read-more:active {
+	color: #F25822;
 }
 
 /* ====END.possibilities==== */
@@ -264,7 +282,12 @@ a {
 	color: #666666;
 }
 
-.advantages-offers {}
+.advantages-offers {
+	outline: 1px solid black;
+	max-width: 370px;
+	min-height: 549px;
+	background-color: #fff;
+}
 
 .advantages-offers-card {
 	margin: 0 auto 100px;
@@ -296,7 +319,9 @@ a {
 
 .advantages-offers-txt {}
 
-.advantages-offers-btn {}
+.advantages-offers-btn {
+	padding: 15px 26px 15px 46px;
+}
 
 .btn {}
 
