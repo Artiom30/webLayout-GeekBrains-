@@ -31,6 +31,19 @@ a {
 	font-family: "Gilroy-Bold", sans-serif;
 }
 
+.btn:hover {
+	color: black;
+	stroke: black;
+	border: 1px solid black;
+}
+
+.btn:active {
+	color: #F25822;
+	background-color: #ffffff;
+	border: 1px solid black;
+	stroke: #F25822;
+}
+
 /* ===========.top================= */
 
 /* ====.top-header===== */
@@ -135,30 +148,19 @@ a {
 	line-height: 18px;
 }
 
-.btn-start:hover {
-	background-color: white;
-	color: #888888;
-	border: 1px solid black;
-}
-
-.btn-start:active {
-	background-color: white;
-	color: #F25822;
-}
-
 .btn-watch-video {
 	font-size: 15px;
 	line-height: 18px;
 	color: #AAAAAA;
 }
 
-.btn-watch-video:hover {
+/* .btn-watch-video:hover {
 	color: black;
 }
 
 .btn-watch-video:active {
 	color: #F25822;
-}
+} */
 
 /* ====END.top-promor==== */
 /* =====.top-logos==== */
@@ -209,7 +211,7 @@ a {
 	gap: 25px;
 }
 
-.possibilities-card-item__padding {
+.possibilities-card-item__central-shadow {
 	width: 370px;
 	min-height: 291px;
 	padding: 36px 31px 29px 30px;
@@ -262,16 +264,19 @@ a {
 
 .advantages {
 	background: #FAFAFA;
-	outline: 1px solid yellow;
 }
 
 .advantages-wrp {
+	max-width: 682px;
+	width: 100%;
 	margin: 12px auto 55px;
 }
 
 .advantages-wrp-title {
+	text-align: center;
 	font-size: 45px;
 	line-height: 53px;
+	margin: 12px auto 19px;
 }
 
 .advantages-wrp-txt {
@@ -283,24 +288,36 @@ a {
 }
 
 .advantages-offers {
-	outline: 1px solid black;
 	max-width: 370px;
 	min-height: 549px;
 	background-color: #fff;
+	list-style: none;
+	margin: 0 auto 100px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(max-content, 370px));
+	justify-content: center;
+	gap: 30px;
 }
 
 .advantages-offers-card {
-	margin: 0 auto 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.advantages-offers-card__central-shadow {
+	box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
 }
 
 .advantages-offers-image {
-	width: 400px;
-	height: 300px;
+	max-width: 370px;
+	width: 100%;
+	min-height: 270px;
 	/* В макете мне кажется недочёт с размерами картинок... Поэтому размеры я поствил одинаковыми. */
-	outline: 1px solid red;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	margin: 0 auto 25px;
 }
 
 .advantages-offers-image__img-1 {
@@ -315,20 +332,31 @@ a {
 	background-image: url(../img/social-marketing.png);
 }
 
-.advantages-offers-title {}
+.advantages-offers-title {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0 auto 22px;
+}
 
-.advantages-offers-txt {}
+.advantages-offers-txt {
+	max-width: 310px;
+	width: 100%;
+	font-family: "Gilroy-Regular", sans-serif;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: center;
+	color: #AAAAAA;
+	margin: 0 auto 39px;
+}
 
 .advantages-offers-btn {
 	padding: 15px 26px 15px 46px;
+	margin: 0 auto 50px;
 }
-
-.btn {}
 
 /* ====END.advantages==== */
 
 /* ====END.services==== */
-
 
 /*=====Gilroy===== */
 @font-face {
