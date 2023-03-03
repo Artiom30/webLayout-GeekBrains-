@@ -187,11 +187,8 @@ a {
 /* ====END.top-logos==== */
 /* =====END.top===== */
 /* ====.services==== */
-.services {}
 
 /* ====.possibilities==== */
-
-.possibilities {}
 
 .possibilities-card {
 	margin: 24px auto 176px;
@@ -261,8 +258,7 @@ a {
 
 /* ====END.possibilities==== */
 /* ====.advantages==== */
-
-.advantages {
+.advantages__background {
 	background: #FAFAFA;
 }
 
@@ -312,7 +308,7 @@ a {
 .advantages-offers-image {
 	max-width: 370px;
 	width: 100%;
-	min-height: 270px;
+	height: 270px;
 	/* В макете мне кажется недочёт с размерами картинок... Поэтому размеры я поствил одинаковыми. */
 	background-repeat: no-repeat;
 	background-size: cover;
