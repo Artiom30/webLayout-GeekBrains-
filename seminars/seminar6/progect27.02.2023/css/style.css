@@ -1,4 +1,4 @@
-/* Seminar 5 */
+/* Seminar 6 */
 * {
 	margin: 0;
 	padding: 0;
@@ -166,6 +166,7 @@ a {
 .top-logos-list {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	gap: 72px;
@@ -183,10 +184,9 @@ a {
 
 .advantages-list {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(365px, 1fr));
+	grid-template-columns: repeat(3, minmax(30%, 362px));
 	gap: 30px;
 	list-style: none;
-
 }
 
 .advantages-list-item-big {
@@ -276,6 +276,7 @@ a {
 		max-width: 768px;
 	}
 
+
 	.top-content-small-title {
 		font-size: 16px;
 		line-height: 26px;
@@ -287,8 +288,42 @@ a {
 	}
 
 	.top-logos-list {
-		max-width: 534px;
-		margin: 0 auto;
+		/* max-width: 534px; */
+		/* margin: 0 auto; */
+		padding: 0 5%;
+		box-sizing: border-box;
 		gap: 32px;
+	}
+
+	.advantages-list {
+		grid-template-columns: repeat(1, minmax(30%, 362px));
+		justify-content: center;
+		/* Центрирование плиток */
+	}
+
+	/* Как убрать свойства элементу ( переопределить ) */
+	/* .advantages-item__big {
+		max-width: 362px;
+		min-height: 389px;
+	}
+
+	.advantages-list-item-big {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+
+	.advantages-item__big .advantages-item-photo {
+		width: 98px;
+		height: 103px;
+		margin: 0 auto 30px;
+	}
+
+	.advantages-item__big .advantages-item-title {
+		margin: 0 0 30px 0;
+	} */
+
+	/* Убрать свойства 3 строчками */
+	[class|="advantages-list-item"] {
+		display: none;
 	}
 }
