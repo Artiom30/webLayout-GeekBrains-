@@ -5,13 +5,17 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #222222;
 }
 
 .center {
 	max-width: 1140px;
 	width: 100%;
 	margin: 0 auto;
-	outline: 1px solid red;
 }
 
 li {
@@ -27,29 +31,26 @@ a {
 	background: #222222;
 }
 
-.header-shell {
+.header-menu-shell {
 	display: flex;
 	justify-content: space-between;
 }
 
-.header-left {
+.header-menu__left-position {
 	margin: 18px 0 19px 0;
-}
-
-.header-left-logo {
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
 	gap: 41px;
 }
 
-.header-left-logo-img-link {}
+.header-menu__left-position a:hover {
+	filter: brightness(60%)
+}
 
-.header-logo-img {}
-
-.header-search {}
-
-.header-search-icon {}
+.header-menu__left-position a:active {
+	filter: brightness(40%)
+}
 
 .header-search-icon-svg {
 	fill: white;
@@ -57,36 +58,296 @@ a {
 	height: 26px;
 }
 
-.header-right {
+.header-menu__right-position {
 	margin: 26px 0 20px 0;
 	display: flex;
 	justify-content: center;
-	align-items: baseline;
+	align-items: center;
 	gap: 33px;
 }
 
-.header-right-menu-link {}
+.header-menu__right-position a:hover {
+	filter: brightness(60%)
+}
 
-.header-right-menu-link-svg {
+.header-menu__right-position a:active {
+	filter: brightness(40%)
+}
+
+.header-menu-icon-svg {
 	width: 32px;
 	height: 23px;
 	fill: white;
 }
 
-.header-profile-right-link {}
-
-.header-right-profile-link-svg {
+.header-profile-icon-svg {
 	width: 29px;
 	height: 29px;
 	fill: white;
 }
 
-.header-right-basket-link {}
-
-.header-right-basket-link-svg {
+.header-basket-icon-svg {
 	width: 32px;
 	height: 29px;
 	fill: white;
 }
 
 /* =====END.header==== */
+/* =====.promo==== */
+.promo {
+	background: #F1E4E6;
+	min-height: 764px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.promo-photo {
+	max-width: 800px;
+	width: 100%;
+	min-height: 764px;
+	background-image: url(../img/promo-photo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.promo-banner-shell {
+	max-width: 800px;
+	width: 100%;
+	min-height: 764px;
+	display: flex;
+	align-items: center;
+}
+
+.promo-banner-text {
+	margin-left: 91px;
+	max-width: 380px;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 58px;
+	font-style: normal;
+	color: #222222;
+	position: relative;
+}
+
+.promo-banner-text::before {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 92px;
+	background-color: #F16D7F;
+	position: absolute;
+	left: -28px;
+	top: -1px;
+}
+
+.promo-banner-subtext {
+	display: block;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	font-style: normal;
+}
+
+.promo-banner-subtext span {
+	color: #F16D7F;
+}
+
+/* =====END.promo==== */
+/* ====.offer==== */
+.offer {
+	margin: 65px auto 0;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(30%, 360px));
+	gap: 30px;
+}
+
+.offer-card {
+	max-width: 360px;
+	width: 100%;
+	min-height: 260px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card__for-women {
+	background-image: url(../img/offers-photo-img-for-women.jpg);
+}
+
+.card__for-man {
+	background-image: url(../img/offers-photo-img-for-man.jpg);
+
+}
+
+.card__for-kids {
+	background-image: url(../img/offers-photo-img-for-kids.jpg);
+
+}
+
+.card__accesories {
+	max-width: 1140px;
+	width: 100%;
+	min-height: 180px;
+	background-image: url(../img/offers-photo-img-accesories.jpg);
+	grid-column: span 3;
+}
+
+.offer-card-info {
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(../img/offer-card-info-dark-layer.png);
+}
+
+.offer-card-info:hover {
+	background-image: none;
+}
+
+.offer-card-info:active {
+	background:
+		linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 1.2));
+}
+
+.offer-card-info-subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.offer-card-info-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #F16D7F;
+	text-transform: uppercase;
+}
+
+/* ====END.offer==== */
+
+/* ====.product==== */
+.product {
+	margin: 100px auto 0;
+}
+
+.product-wrp {
+	text-align: center;
+}
+
+.product-title {
+	text-transform: capitalize;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.product-txt {
+	margin: 6px auto 0;
+	font-size: 14px;
+	line-height: 17px;
+	color: #9F9F9F;
+}
+
+.product-card-list {
+	margin: 70px auto 0;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(30%, 360px));
+	gap: 30px;
+}
+
+.product-card-item {
+	max-width: 360px;
+	width: 100%;
+	min-height: 581px;
+	background-color:
+		#F8F8F8;
+}
+
+.product-card-item-backgrond {
+	max-width: 360px;
+	width: 100%;
+	min-height: 420px;
+
+	background-color: #F7E4E2;
+	display: flex;
+	justify-content: center;
+}
+
+.product-card-wrp {
+	margin: 24px 29.26px 24px 19px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.product-card-item-name {
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.product-card-item-name:hover {
+	color: #5D5D5D;
+}
+
+.product-card-item-name:active {
+	color: #F16D7F;
+}
+
+.product-card-item-description {
+	max-width: 312px;
+	width: 100%;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #5D5D5D;
+}
+
+.product-card-item-price {
+	color: #F16D7F;
+}
+
+.product-card-item-price:hover {
+	color: #5D5D5D;
+}
+
+.product-card-item-price:active {
+	color: black;
+}
+
+.product-btn {
+	display: block;
+	margin: 50px auto 0;
+	padding: 15px 39px;
+	outline: 1px solid #FF6A6A;
+	color: #F26376;
+	border: none;
+	background-color: #fff;
+}
+
+.product-btn:hover {
+	outline: 2px solid #5D5D5D;
+	color: #5D5D5D;
+}
+
+.product-btn:active {
+	background-color: #F16D7F;
+	color: #FFFFFF;
+	outline: 3px solid #FF6A6A;
+}
+
+/* ====END.product==== */
+/* НЕ ЗАБУДЬ ДОБАВИТЬ margin , для следующего блока */
