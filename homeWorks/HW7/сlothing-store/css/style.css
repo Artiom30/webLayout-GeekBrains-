@@ -63,7 +63,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 33px;
+	gap: 41px;
 }
 
 .header-menu__right-position a:hover {
@@ -150,6 +150,7 @@ a {
 	font-size: 32px;
 	line-height: 38px;
 	font-style: normal;
+	white-space: nowrap
 }
 
 .promo-banner-subtext span {
@@ -159,6 +160,7 @@ a {
 /* =====END.promo==== */
 /* ====.offer==== */
 .offer {
+	max-width: 1140px;
 	margin: 65px auto 0;
 	box-sizing: border-box;
 	display: grid;
@@ -239,7 +241,7 @@ a {
 
 /* ====.product==== */
 .product {
-	margin: 100px auto 0;
+	margin: 96px auto 0;
 }
 
 .product-wrp {
@@ -260,7 +262,7 @@ a {
 }
 
 .product-card-list {
-	margin: 70px auto 0;
+	margin: 48px auto 0;
 	box-sizing: border-box;
 	display: grid;
 	grid-template-columns: repeat(3, minmax(30%, 360px));
@@ -351,3 +353,85 @@ a {
 
 /* ====END.product==== */
 /* НЕ ЗАБУДЬ ДОБАВИТЬ margin , для следующего блока */
+
+
+@media(max-width:1024px) {
+	.center {
+		max-width: 768px;
+	}
+
+	.header-menu-shell {
+		justify-content: center;
+		gap: 414px;
+	}
+
+	.header-menu__right-position {
+		gap: 25px;
+	}
+
+	.header-menu__right-position-item__tablet {
+		padding-right: 17px;
+	}
+
+	.promo-photo {
+		max-width: 388px;
+		min-height: 368px;
+	}
+
+	.promo {
+		min-height: auto;
+	}
+
+	.promo-banner-shell {
+		max-width: 380px;
+		min-height: 368px;
+	}
+
+	.promo-banner {
+		max-width: 283px;
+	}
+
+	.promo-banner-text {
+		margin-left: 67px;
+		font-size: 44px;
+		line-height: 52px;
+	}
+
+	.promo-banner-subtext {
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 700;
+	}
+
+	.offer {
+		max-width: 768px;
+		margin: 65px auto o;
+		grid-template-columns: repeat(3, minmax(30%, 231px));
+		gap: 19.1px;
+		justify-content: center;
+	}
+
+	.offer-card {
+		min-height: 167px;
+	}
+
+	.card__accesories {
+		min-height: 116px;
+	}
+
+	.product {
+		max-width: 768px;
+		margin: 110px auto 0;
+	}
+
+	.product-card-list {
+		margin: 72px auto 0;
+		grid-template-columns: repeat(2, minmax(48%, 360px));
+		gap: 16px;
+		justify-content: center;
+	}
+
+	.product-btn {
+		margin: 32px auto 0;
+	}
+}
