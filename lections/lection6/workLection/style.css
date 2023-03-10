@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+summary {
+	display: block;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary::before {
+	content: 'Закрыто';
+	padding-right: 0.5em;
+}
+
+details[open]>summary::before {
+	content: 'Отктыто';
+}
+
+body {
+	padding-bottom: 350px;
+}
+
+/* Задаём обёртку дла видео и контента, затем выставляем отностельно этой обёртки и плеер и контент */
+.video-box {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+/* Дополнительный слой */
+.video-heading {
+	color: white;
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	z-index: 5;
+	/* z-index для того чтобы заголовок был видемым слоем над блоком с видео */
+}
+
+.video {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+}

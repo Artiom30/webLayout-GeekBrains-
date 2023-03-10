@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lection6</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="header"></header>
+	<nav class="menu">
+		<a href="#">link 1</a>
+		<a href="#">link 2</a>
+		<a href="#">link 3</a>
+	</nav>
+	<!-- Блок <nav> , не может быть в <main> , так как он повторяется на других страницах. -->
+	<main>
+		<section class="about">
+			<h2>Обо мне</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nobis?</p>
+		</section>
+		<section class="skills">
+			<h2>Мои навыки</h2>
+			<article>
+				<h3>HTML5</h3>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</article>
+			<article>
+				<h3>CSS3</h3>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</article>
+			<article>
+				<h3>JS</h3>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</article>
+			<!-- section - логический , статический элемент
+			article -логический , динамический элемент -->
+		</section>
+		<section>
+			<h2>Первые шаги в веб-разработке</h2>
+			<figure>
+				<figcaption>Уровень заработной платы</figcaption>
+				<img src="#" alt="график роста ЗП">
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, libero!</p>
+			</figure>
+			<!-- Благодаря тегу <figure> , SEO понимает что все 3 элемента связаны по смыслу . -->
+		</section>
+		<section>
+			<h2>Истории обо мне</h2>
+			<details>
+				<summary>Истоория работы в первой компании</summary>
+				<h3>Название компании</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa exercitationem adipisci quasi natus voluptatem
+				praesentium!
+				<h4>Минусы которые встретил</h4>
+				<ul>
+					<li>List-1</li>
+					<li>List-2</li>
+					<li>List-3</li>
+				</ul>
+				<!-- В бокое <details> , могут быть любые блоки в любом количестве. -->
+			</details>
+			<details open>
+				<summary>Опыт работы</summary>
+				<p>Атрибут open сразу же открывает тег details на странице.</p>
+			</details>
+		</section>
+		<section>
+			<h2>Оставить заявку на проект</h2>
+			<form action="#">
+				Ваше имя <input autofocus title="title - это всплывающая подсказка при наведении курсором на поле" required
+					type="text"><br>
+				Email <input type="email"><br>
+				Дата старта разработки <input type="date"><br>
+				Сколько вам нужно проектов?<input min="1" type="number"><br>
+				Какие границы <input type="range"><br>
+				<button type="submit">Оставить заявку</button>
+				<!-- type="range - Выдаёт ползунок с выбором значений( может быть только 1 для HTML5) -->
+				<!-- autofocus выделяет поле ввода при обновлениеии страницы -->
+				<!-- required делает поле обязательным для заполнения -->
+				<!-- type="submit" - отправляет данные. А если нет кнопки submit отрабатывает от ENTER -->
+			</form>
+		</section>
+		<section>
+			<h2>Музыкальный раздел сайта</h2>
+			<audio controls autoplay src="audio.mp3"></audio><br>
+			<!-- controls отображает органы управления звуком -->
+		</section>
+		<section class="video-box">
+			<!-- Способ добавление дополнительного слоя для контента над видеоплеером -->
+			<h2 class="video-heading">Хорошее видео</h2>
+			<video class="video" controls preload="auto" src="video.mp4"></video>
+			<!-- Тег <video> изначально блочный -->
+		</section>
+	</main>
+	<footer class="footer"></footer>
+	<!-- Назвния классов вполне могут совпадать с сематическими тегами -->
+</body>
+
+</html>
