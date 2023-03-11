@@ -1,20 +1,32 @@
 /* ====Задание 2==== */
-div {
+
+/* div {
 	margin: 0 0 10px 0;
-}
+} */
 
 /* ====ENDЗадание 2==== */
 
+/* ====Задание 3==== */
 
+input[type="checkbox"] {
+	display: none;
+	/* visibility: hidden; */
+}
 
-/* ====Задание 3====
-label {
+input[type="checkbox"]:checked~label::before {
+	background-image: url(https://yt3.ggpht.com/ytc/AKedOLQGflmRiLJVuBC-9T7WH7HSGfR3eckNQYGwl-aGMg=s900-c-k-c0x00ffffff-no-rj);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+label[for="check"] {
 	display: block;
 	padding: 0 0 0 20px;
 	position: relative;
 }
 
-label::before {
+label[for="check"]::before {
 	content: "";
 	display: block;
 	width: 15px;
@@ -25,12 +37,56 @@ label::before {
 	left: 0;
 }
 
-input[type="checkbox"]:checked~label::before {
-	background-image: url();
-	background-repeat: no-repeat;
-	background-size: ;
-} */
+/* ====ENDЗадание 3==== */
 
+/* ====Задание 4==== */
+.task-4 {
+	margin: 0;
+	height: 50vh;
+	display: flex;
+}
 
+audio {
+	margin: auto;
+}
 
-/* ====END Задание 3==== */
+body {
+	/* margin: 0; */
+}
+
+.video {
+	/* Создаётся обёртка для видео */
+	width: 100%;
+	min-height: 100vh;
+	/* Параметры для расположения на всём экране */
+	border: 1px solid black;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	/* Для расположения остальных элементов в обёртке относительно обёртке */
+	color: #fff;
+	display: flex;
+}
+
+.video:hover {
+	filter: brightness(30%);
+}
+
+.video-file {
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	/* Свойство для размещения обьекта в блоке. */
+}
+
+.txt {
+	width: 80%;
+	margin: 0 auto;
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	/* Расположение контента. */
+}
+
+/* ====ENDЗадание 4==== */
