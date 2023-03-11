@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lection8</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<!-- Задание 1 -->
+	<div>
+		<header class="page-header"></header>
+		<section class="promo"></section>
+	</div>
+	<main>
+		<section class="apps__dounload"></section>
+		<section class="meseging"></section>
+		<section class="shering"></section>
+		<section class="groups_of_peaple"></section>
+		<section class="quick_app"></section>
+	</main>
+	<footer class="page-footer"></footer>
+
+
+	<!-- Задание 2 -->
+	<form action="#" method="post" oninput="result.value=(range.value)">
+		<!-- 2 варианта привязывания <label> к <input"> -->
+		<!-- 1 вариант -->
+		<div>
+			<label for="name">Имя</label>
+			<input id="name" type="text" required autofocus placeholder="Ваше имя">
+		</div>
+		<!-- 2 вариант
+		<label>
+			<input type="text">
+		</label> -->
+		<div>
+			<label for="email">@mail</label>
+			<input id="email" type="email" required placeholder="mezheynikov1@gimail.ru">
+		</div>
+		<div>
+			<label for="psw">Пароль</label>
+			<input id="psw" type="password" required placeholder="Ваш пароль">
+		</div>
+		<div>
+			<label for="age">Ваш возраст</label>
+			<input id="age" type="number" required placeholder="70">
+		</div>
+		<div>
+			<label for="birth-date">Дата рождения</label>
+			<input id="birth-date" type="date" required placeholder="15.13.2654">
+		</div>
+		<div>
+			<label for="phone">Номер телефона</label>
+			<input id="phone" type="tel" required placeholder="+3754477733344">
+		</div>
+		<div>
+			<input id="range" type="range" value="20" step="1">
+			<output for="range" name="result">1</output>
+		</div>
+		<!-- type="tel" - тип данных в форме для заполнения номером телефона
+		<input type="submit" value="Отправить">
+		<input type="reset" value="Очистить"> -->
+		<!-- Вариант заелизации "Отправить" "Очистить" через <button> -->
+		<button type="submit">Отправить</button>
+		<button type="reset">Очистить</button>
+	</form>
+
+	<!-- Задание 3 -->
+	<!-- <form action="#">
+		<input id="check" type="checkbox">
+		<label for="check">text</label>
+	</form> -->
+
+</body>
+
+</html>
