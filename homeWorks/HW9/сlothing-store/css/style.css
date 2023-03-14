@@ -439,7 +439,72 @@ a {
 }
 
 /* ====END.product==== */
-/* НЕ ЗАБУДЬ ДОБАВИТЬ margin , для следующего блока */
+/* ====bonus-offer===== */
+.bonus-offer {
+	background-color: #222224;
+	margin: 96px auto 0;
+}
+
+.bonus-offer-shell {}
+
+.bonus-offer-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bonus-offer-item {
+	margin: 104px auto;
+	max-width: 360px;
+	width: 100%;
+	min-height: 134px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bonus-offer-item-link {
+	display: block;
+}
+
+.bonus-offer-item-svg {
+	fill: #F16D7F;
+	display: block;
+}
+
+.bonus-offer-item-link:hover svg {
+	fill: #9F9F9F;
+}
+
+.bonus-offer-item-link:active svg {
+	fill: #fff;
+
+}
+
+.bonus-offer-item-title {
+	display: block;
+	font-weight: 400;
+	font-size: 19.96px;
+	line-height: 24px;
+	color: #FBFBFB;
+	text-align: center;
+}
+
+.bonus-offer-item-descrption {
+	display: block;
+	max-width: 298px;
+	width: 100%;
+	font-weight: 300;
+	font-size: 13.972px;
+	line-height: 17px;
+	text-align: center;
+	color: #FBFBFB;
+	text-align: center;
+}
+
+/* ====ENDbonus-offer===== */
+
 
 
 @media(max-width:1024px) {
