@@ -59,7 +59,7 @@ a {
 }
 
 .header-menu__right-position {
-	margin: 26px 10px 20px 0;
+	margin: 26px 19px 20px 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -113,14 +113,11 @@ a {
 	fill: #F16D7F;
 }
 
-.header-basket-icon-svg {}
-
 .header-basket-icon-svg {
 	width: 32px;
 	height: 29px;
 	fill: white;
 }
-
 
 /* =====END.header==== */
 /* =====.promo==== */
@@ -303,7 +300,8 @@ a {
 
 .product-card-item {
 	display: block;
-	width: 360px;
+	max-width: 360px;
+	width: 100%;
 	margin: 0 0 30px 0;
 	position: relative;
 	background: #F8F8F8;
@@ -357,9 +355,10 @@ a {
 	position: relative;
 }
 
-.product-card-item-link {}
-
-.product-card-photo {}
+.product-card-photo {
+	max-width: 360px;
+	width: 100%;
+}
 
 .product-item-wrp {
 	margin: 25px auto 24px 16px;
@@ -454,11 +453,10 @@ a {
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
-
 }
 
 .bonus-offer-item {
-	margin: 104px auto;
+	margin: 104px auto 104px;
 	max-width: 360px;
 	width: 100%;
 	min-height: 134px;
@@ -526,7 +524,6 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* flex-wrap: wrap; */
 }
 
 .donations-beggar {
@@ -662,9 +659,6 @@ input[type="email"]:focus {
 	gap: 7px;
 }
 
-/* .footer-social-icon:first-of-type[path] {
-	fill: #000000;
-} */
 .footer-social-icon-link {
 	display: flex;
 	justify-content: center;
@@ -686,20 +680,15 @@ input[type="email"]:focus {
 	fill: #8B8B8C;
 }
 
-
 /* ====ENDfotter===== */
-
-
 
 @media(max-width:1024px) {
 	.center {
 		max-width: 768px;
-		width: 100%;
 	}
 
 	.header-menu-shell {
 		justify-content: space-between;
-		/* gap: 414px; */
 	}
 
 	.header-menu__right-position {
@@ -770,6 +759,35 @@ input[type="email"]:focus {
 
 	.product-btn {
 		margin: 32px auto 0;
+	}
+
+	.bonus-offer {
+		margin: 64px auto 0;
+	}
+
+	.bonus-offer-list {
+		gap: 47px;
+		flex-direction: column;
+	}
+
+	.bonus-offer-list {
+		padding-top: 48px;
+		padding-bottom: 64px;
+	}
+
+	.bonus-offer-item {
+		margin: 0 auto;
+	}
+
+	.donations-shell {
+		margin: 64px auto 140px;
+		gap: 48px;
+		flex-direction: column;
+	}
+
+	.footer-shell {
+		max-width: 704px;
+		width: 100%;
 	}
 }
 
@@ -875,6 +893,51 @@ input[type="email"]:focus {
 
 	.product-btn {
 		margin: 40px auto 0;
+	}
+
+	.bonus-offer {
+		margin: 96px auto 0;
+	}
+
+	.bonus-offer-list {
+		padding-bottom: 81px;
+	}
+
+	.donations-shell {
+		margin: 64px auto 109px;
+		gap: 59px;
+	}
+
+	.donations-beggar-txt {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.donations-subs-title {
+		line-height: 36.77px
+	}
+
+	.donations-subs-subtitle {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.donations-subs {
+		justify-content: center;
+		gap: 22px;
+	}
+
+	.footer {
+		min-height: 141px;
+	}
+
+	.footer-shell {
+		margin: 43px auto 9px;
+		max-width: 252px;
+		width: 100%;
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		gap: 40px;
 	}
 }
 
