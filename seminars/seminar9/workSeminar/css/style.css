@@ -1,0 +1,347 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* ====task1==== */
+/* a {
+	text-decoration: none;
+}
+
+.menu__link:hover {
+	color: red;
+}
+
+.menu__link:active {
+	color: green;
+} */
+
+
+/* [ctrl]+[v] */
+/* .menu__list:nth-child(1)>.menu__link {
+	text-decoration: underline;
+}
+
+.menu__list:last-child {
+	font-weight: bold
+}
+
+.menu__list:nth-child(3)>.menu__link {
+	color: orange; 
+}
+*/
+
+/* Это обращение к первому дочернему элементу родителя, а в нём к первой по вложенности ссилке. */
+
+/* ====ENDtask1==== */
+/* ====task2==== */
+
+/* .product {
+	width: 250px;
+	padding: 24px;
+	border: 1px solid #000;
+	position: relative;
+
+}
+
+.product__img {
+	background-color: forestgreen;
+	height: 150px;
+} */
+
+/* .product::after 
+ {
+	content: "new";
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	background-color: red;
+	color: white;
+}
+
+.product::before {
+	content: "sele";
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	background-color: orange;
+	color: white;
+} */
+/* Для одинаковых свойств разных элементов используется группировка. Селекторы выписываются через запятую. и им задают свойства (одинаковые).А те св-ва которые отличаются выписываются отдельно.  */
+
+/* .product::after,
+.product::before {
+	content: "new";
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	background-color: red;
+	color: white;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	word-break: break-all;
+	border-radius: 50%;
+	text-align: center;
+} */
+
+/* Для позционирования через position
+ 1. relative - родительскому блоку псевдоэлемента
+ 2. Обоим  position: absolute;
+ 3. Обоим элементам top: 0; - перемещает оба элемнета в левый верхный угол.
+ 4. Для левго - left: 0; Для правого right: 0; */
+
+/* .product::after {
+	content: "new";
+	background-color: red;
+	right: 0;
+}
+
+.product::before {
+	content: "sele";
+	background-color: orange;
+	left: 0;
+} */
+
+/* Эти 2 псевдоэлемента - декоративные! */
+
+/* ====ENDtask2==== */
+
+/* ====task3==== */
+
+/* svg:hover {
+	fill: purple;
+}
+
+svg:active {
+	fill: yellow;
+} */
+
+/* ====ENDtask3==== */
+/* ====task4==== */
+/* 
+.item {
+	width: 150px;
+	height: 86px;
+	background-color: forestgreen;
+	border: 1px solid #000;
+	transition: transform 1s ease;
+}
+
+.item_1:hover {
+	transform: translate(50px);
+}
+
+.item_2:hover {
+	transform: scale(2);
+}
+
+.item_3:hover {
+	transform: rotate(60deg);
+}
+ */
+/* ====ENDtask4==== */
+/* ====task5==== */
+/* 
+.content {
+	margin-top: 100px;
+	margin-left: 200px;
+	position: relative;
+
+}
+
+.item {
+	position: absolute;
+	width: 150px;
+	height: 61px;
+	background-color: pink;
+	transition: transform 2s ease;
+}
+
+.content:hover .item_1 {
+	transform: rotate(45deg);
+}
+
+.content:hover .item_2 {
+	transform: rotate(90deg);
+}
+
+.content:hover .item_3 {
+	transform: rotate(135deg);
+}
+ */
+/* ====ENDtask5==== */
+/* ====task6==== */
+/* 
+@keyframes rotate-scale-up {
+	0% {
+		transform: scale(1) rotateZ(0);
+	}
+
+	50% {
+		transform: scale(2) rotateZ(180deg);
+	}
+
+	100% {
+		transform: scale(1) rotateZ(360deg);
+	}
+}
+
+.button {
+	margin: 100px 100px;
+	width: 150px;
+	height: 50px;
+	background-color: purple;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+.button:hover {
+	animation: rotate-scale-up 0.65s linear both;
+}
+ */
+/* ====ENDtask6==== */
+
+/* Способ стилизации дочернего элемента по обращению к родительскому */
+/* 
+.parent {
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+}
+
+Такая конструкция используется для стилизации карточек товаров
+.parent:hover .child {
+	background-color: purple;
+}
+
+.child {
+	width: 60px;
+	height: 60px;
+	background-color: green;
+}
+*/
+
+/* Кароточка товаров */
+
+.products-item {
+	display: block;
+	width: 360px;
+	margin: 0 0 30px 0;
+	position: relative;
+	background: #F8F8F8;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.products-item:hover .products-item-btn {
+	/* display: flex; */
+	visibility: visible;
+}
+
+.products-item-btn:hover {
+	background-color: #ccc;
+	color: #000;
+	border: 1px solid #000;
+}
+
+.products-item-btn:hover svg {
+	fill: #000;
+}
+
+.products-item-btn:active {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.products-item-btn:active svg {
+	fill: #fff;
+}
+
+/* затемнение реализовано через псевдоэлемент */
+.products-item:hover .products-item-photo-wrp::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(58, 56, 56, 0.86);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.products-item-photo-wrp {
+	/* для затемнения через псевдоэлемент необходимо задать родительскому блоку position: relative; */
+	position: relative;
+}
+
+.products-item-photo {
+	display: block;
+	margin: 0 auto;
+	/* для центровки изображения */
+	/* box-sizing: border-box; */
+}
+
+.products-item-txt-wrp {
+	padding: 25px 18px 20px 18px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.products-item-title {
+	/* display: block; */
+	margin: 0 0 12px 0;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 16px;
+	/* color: #000000; */
+}
+
+.products-item-txt {
+	margin: 0 0 18px 0;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #5D5D5D;
+}
+
+.products-item-price {
+	/* display: block; */
+	margin: 0;
+	font-size: 16px;
+	line-height: 19px;
+	color: #F16D7F;
+}
+
+.products-item-btn {
+	/* display: none; */
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #FFFFFF;
+	background: transparent;
+	text-align: center;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 30%;
+	left: calc(50% - 80px);
+}
+
+.products-item-btn svg {
+	fill: #fff;
+	margin: 0 11px 0 0;
+}
