@@ -52,11 +52,48 @@ a {
 	filter: brightness(40%)
 }
 
-.header-search-icon-svg {
-	fill: white;
+/* ====icon-from-search==== */
+.header-search-form {
 	width: 26px;
 	height: 26px;
+	position: relative;
 }
+
+.header-search-field {
+	width: 0;
+	padding: 0;
+	min-height: 20px;
+	box-sizing: border-box;
+	background-color: #FFF;
+	border: none;
+	position: absolute;
+	top: -3px;
+	left: 30px;
+}
+
+.header-search-field:focus {
+	width: 180px;
+	padding: 5px;
+	transition: width 1s ease;
+}
+
+.header-search-field:focus~label svg {
+	filter: brightness(40%)
+}
+
+.header-search-icon-svg {
+	fill: #FFF;
+}
+
+.header-search-icon-svg:hover {
+	filter: brightness(60%)
+}
+
+.header-search-icon-svg:active {
+	filter: brightness(40%)
+}
+
+/* ====ENDicon-from-search==== */
 
 .header-menu__right-position {
 	margin: 26px 19px 20px 0;
