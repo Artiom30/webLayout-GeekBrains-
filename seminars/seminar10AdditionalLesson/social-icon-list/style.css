@@ -1,0 +1,20 @@
+a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
+}
+
+a:hover {
+	background-color: #F16D7F;
+}
+
+a svg {
+	fill: black;
+}
+
+a:hover svg {
+	fill: currentColor;
+}

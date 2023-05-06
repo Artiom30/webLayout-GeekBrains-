@@ -1,0 +1,32 @@
+a {
+	display: block;
+	width: 12px;
+	height: 12px;
+	/* для того чтобы ровно выставить палочки крестика */
+	/* outline: 1px solid black; */
+	position: relative;
+}
+
+a::before,
+a::after {
+	content: "";
+	display: block;
+	/* толщина палочки */
+	width: 3px;
+	height: 100%;
+	background-color: #6f6e6e;
+	position: absolute;
+	border-radius: 5px;
+}
+
+a::before {
+	transform: rotate(45deg);
+	left: 4.5px;
+	/* подбирается в Devtools */
+}
+
+a::after {
+	transform: rotate(-45deg);
+	left: 4.5px;
+	/* подбирается в Devtools */
+}
