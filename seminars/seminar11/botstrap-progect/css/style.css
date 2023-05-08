@@ -1,0 +1,49 @@
+/* 
+.carousel {
+	height: 300px;
+	border: 2px solid red;
+	overflow: hidden;
+}
+
+.carousel-indicators [data-bs-target] {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+
+
+.carousel-control-prev-icon {
+	background-image: url(https://w7.pngwing.com/pngs/87/257/png-transparent-bts-logo-graphic-design-advertising-brand-left-arrow-miscellaneous-angle-service.png);
+}
+
+.carousel-control-next-icon {
+	background-image: url(https://w7.pngwing.com/pngs/569/561/png-transparent-arrow-direction-forward-navigation-next-right-commonmat-icon.png);
+}
+ */
+.container-fluid {
+	justify-content: flex-end;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+	display: flex;
+	flex-wrap: inherit;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.navbar-nav {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	align-items: center;
+}
