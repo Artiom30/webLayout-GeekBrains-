@@ -1,14 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lection-8-bootstrap</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+	<!-- Элементы навигации от bootstrap -->
+	<nav class="navbar navbar-expand-lg background-color">
+		<div class="container">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Главная</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled">Disabled</a>
+					</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
 
+	<!-- Заголовки в виде парраграфа от bootstrap -->
+	<!-- <div class="center">
+		<p class="h1 text-color">h1. Bootstrap heading</p>
+	</div> -->
+
+	<!-- breadcrumb ( хлебные крошки ) и стандартизированые классы margin от bootstrap -->
+	<!-- mt-3 - это стандартый класс для задания маржина у элемнта -->
+	<div class="center mt-3 mb-3">
+		<p class="h1">Страница каталога</p>
+	</div>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb container">
+			<li class="breadcrumb-item"><a href="#">Главная</a></li>
+			<li class="breadcrumb-item"><a href="#">Каталог</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Куртки</li>
+		</ol>
+	</nav>
+
+	<!-- Карточки товаров от bootstrap и способ их позиционирования-->
+	<!-- d-flex - класс с display:flex; у bootstrap -->
+
+
+	<div class="product-box container d-flex justify-content-center mt-5">
+		<div class="card" style="width: 18rem;">
+			<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+				alt="Тут картинка" height="230">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+					content.</p>
+				<a href="#" class="btn btn-primary">Купить</a>
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+				alt="Тут картинка" height="230">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+					content.</p>
+				<a href="#" class="btn btn-primary">Купить</a>
+			</div>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+				alt="Тут картинка" height="230">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+					content.</p>
+				<a href="#" class="btn btn-primary">Купить</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Позиционирование элементов с помощью bootstrap - сетки -->
+
+	<!-- col-lg-3 - количесво рядов равное 1/4 всей бутстрап-сетки(12) , на устройстве -lg- ≥992px ( значение взято из таблицы градации префиксов для рядов бутстрап-сетки) -->
+
+
+	<div class="container">
+		<div class="mt-5 row">
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+					alt="Тут картинка" height="230">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Купить</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+					alt="Тут картинка" height="230">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Купить</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+					alt="Тут картинка" height="230">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Купить</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+					alt="Тут картинка" height="230">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Купить</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+					alt="Тут картинка" height="230">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Купить</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+					alt="Тут картинка" height="230">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Купить</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+					alt="Тут картинка" height="230">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Купить</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<img src="https://secondhand-kaz.ru/wp-content/uploads/2019/05/2pKhsmaVqaM.jpg" class="card-img-top"
+					alt="Тут картинка" height="230">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Купить</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
